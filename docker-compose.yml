@@ -1,0 +1,7 @@
+services:
+  nightauth-discord-bot:
+    build: .
+    container_name: nightauth-discord-bot
+    restart: unless-stopped
+    env_file:
+      - .env

@@ -1,0 +1,315 @@
+export interface TranslationStrings {
+  botTitle: string;
+  unauthorized: string;
+  appSwitched: string;
+  appNotFound: string;
+  appStatsTitle: string;
+  licenseCreatedTitle: string;
+  licenseInfoTitle: string;
+  userCreatedTitle: string;
+  userInfoTitle: string;
+  success: string;
+  error: string;
+  noAppsConfigured: string;
+  btnLicenses: string;
+  btnUsers: string;
+  btnStats: string;
+  btnSwitchApp: string;
+  btnCreateKey: string;
+  btnAddUser: string;
+  btnResetHwid: string;
+  btnLanguage: string;
+  btnBack: string;
+  chooseLanguage: string;
+  langSwitched: string;
+}
+
+export interface LanguageOption {
+  code: string;
+  name: string;
+  flag: string;
+}
+
+export const SUPPORTED_LANGUAGES: LanguageOption[] = [
+  { code: "en", name: "English", flag: "🇺🇸" },
+  { code: "es", name: "Español", flag: "🇪🇸" },
+  { code: "de", name: "Deutsch", flag: "🇩🇪" },
+  { code: "fr", name: "Français", flag: "🇫🇷" },
+  { code: "it", name: "Italiano", flag: "🇮🇹" },
+  { code: "pl", name: "Polski", flag: "🇵🇱" },
+  { code: "pt", name: "Português", flag: "🇧🇷" },
+  { code: "ru", name: "Русский", flag: "🇷🇺" },
+  { code: "tr", name: "Türkçe", flag: "🇹🇷" },
+  { code: "zh", name: "中文", flag: "🇨🇳" },
+];
+
+export const translations: Record<string, TranslationStrings> = {
+  en: {
+    botTitle: "NightAuth Management Console",
+    unauthorized: "⛔ **Access Denied**: You do not have permission to execute this administrative command.",
+    appSwitched: "✅ Active application switched to **{app}**.",
+    appNotFound: "❌ Application **{app}** was not found in your configured applications.",
+    appStatsTitle: "📊 Application Overview & Statistics",
+    licenseCreatedTitle: "🔑 License(s) Generated Successfully",
+    licenseInfoTitle: "🔍 License Details",
+    userCreatedTitle: "👤 User Account Created",
+    userInfoTitle: "👤 User Profile Details",
+    success: "Success",
+    error: "Operation Failed",
+    noAppsConfigured: "⚠️ No applications configured. Please configure `NIGHTAUTH_APPS` in `.env`.",
+    btnLicenses: "🔑 Licenses",
+    btnUsers: "👥 Users",
+    btnStats: "📊 Stats",
+    btnSwitchApp: "📱 Switch App",
+    btnCreateKey: "➕ Create Key",
+    btnAddUser: "➕ Add User",
+    btnResetHwid: "🔄 Reset HWID",
+    btnLanguage: "🌐 Language",
+    btnBack: "◀️ Back",
+    chooseLanguage: "🌐 Choose your preferred language:",
+    langSwitched: "✅ Language updated to **{lang}**.",
+  },
+  es: {
+    botTitle: "Consola de Gestión NightAuth",
+    unauthorized: "⛔ **Acceso Denegado**: No tienes permisos para ejecutar este comando administrativo.",
+    appSwitched: "✅ Aplicación activa cambiada a **{app}**.",
+    appNotFound: "❌ La aplicación **{app}** no fue encontrada en tus aplicaciones configuradas.",
+    appStatsTitle: "📊 Resumen y Estadísticas de la Aplicación",
+    licenseCreatedTitle: "🔑 Licencia(s) Generada(s) con Éxito",
+    licenseInfoTitle: "🔍 Detalles de la Licencia",
+    userCreatedTitle: "👤 Cuenta de Usuario Creada",
+    userInfoTitle: "👤 Perfil de Usuario",
+    success: "Éxito",
+    error: "Operación Fallida",
+    noAppsConfigured: "⚠️ No hay aplicaciones configuradas. Revisa `NIGHTAUTH_APPS` en `.env`.",
+    btnLicenses: "🔑 Licencias",
+    btnUsers: "👥 Usuarios",
+    btnStats: "📊 Estadísticas",
+    btnSwitchApp: "📱 Cambiar App",
+    btnCreateKey: "➕ Crear Clave",
+    btnAddUser: "➕ Crear Usuario",
+    btnResetHwid: "🔄 Resetear HWID",
+    btnLanguage: "🌐 Idioma",
+    btnBack: "◀️ Volver",
+    chooseLanguage: "🌐 Elige tu idioma preferido:",
+    langSwitched: "✅ Idioma actualizado a **{lang}**.",
+  },
+  de: {
+    botTitle: "NightAuth Verwaltungskonsole",
+    unauthorized: "⛔ **Zugriff verweigert**: Sie haben keine Berechtigung für diesen Befehl.",
+    appSwitched: "✅ Aktive Anwendung gewechselt zu **{app}**.",
+    appNotFound: "❌ Anwendung **{app}** wurde in den konfigurierten Anwendungen nicht gefunden.",
+    appStatsTitle: "📊 Anwendungsübersicht & Statistiken",
+    licenseCreatedTitle: "🔑 Lizenz(en) erfolgreich erstellt",
+    licenseInfoTitle: "🔍 Lizenzdetails",
+    userCreatedTitle: "👤 Benutzerkonto erstellt",
+    userInfoTitle: "👤 Benutzerprofil-Details",
+    success: "Erfolg",
+    error: "Vorgang fehlgeschlagen",
+    noAppsConfigured: "⚠️ Keine Anwendungen konfiguriert. Bitte `NIGHTAUTH_APPS` in `.env` einrichten.",
+    btnLicenses: "🔑 Lizenzen",
+    btnUsers: "👥 Benutzer",
+    btnStats: "📊 Statistiken",
+    btnSwitchApp: "📱 App wechseln",
+    btnCreateKey: "➕ Schlüssel erstellen",
+    btnAddUser: "➕ Benutzer erstellen",
+    btnResetHwid: "🔄 HWID zurücksetzen",
+    btnLanguage: "🌐 Sprache",
+    btnBack: "◀️ Zurück",
+    chooseLanguage: "🌐 Wählen Sie Ihre bevorzugte Sprache:",
+    langSwitched: "✅ Sprache geändert zu **{lang}**.",
+  },
+  fr: {
+    botTitle: "Console de Gestion NightAuth",
+    unauthorized: "⛔ **Accès Refusé**: Vous n'avez pas la permission d'exécuter cette commande.",
+    appSwitched: "✅ Application active basculée vers **{app}**.",
+    appNotFound: "❌ Application **{app}** introuvable dans les applications configurées.",
+    appStatsTitle: "📊 Vue d'ensemble & Statistiques",
+    licenseCreatedTitle: "🔑 Licence(s) générée(s) avec succès",
+    licenseInfoTitle: "🔍 Détails de la licence",
+    userCreatedTitle: "👤 Compte utilisateur créé",
+    userInfoTitle: "👤 Profil utilisateur",
+    success: "Succès",
+    error: "Échec de l'opération",
+    noAppsConfigured: "⚠️ Aucune application configurée. Veuillez définir `NIGHTAUTH_APPS` dans `.env`.",
+    btnLicenses: "🔑 Licences",
+    btnUsers: "👥 Utilisateurs",
+    btnStats: "📊 Statistiques",
+    btnSwitchApp: "📱 Changer d'app",
+    btnCreateKey: "➕ Créer clé",
+    btnAddUser: "➕ Ajouter utilisateur",
+    btnResetHwid: "🔄 Réinitialiser HWID",
+    btnLanguage: "🌐 Langue",
+    btnBack: "◀️ Retour",
+    chooseLanguage: "🌐 Choisissez votre langue préférée :",
+    langSwitched: "✅ Langue modifiée pour **{lang}**.",
+  },
+  it: {
+    botTitle: "Console di Gestione NightAuth",
+    unauthorized: "⛔ **Accesso Negato**: Non hai i permessi per eseguire questo comando.",
+    appSwitched: "✅ Applicazione attiva cambiata in **{app}**.",
+    appNotFound: "❌ Applicazione **{app}** non trovata tra quelle configurate.",
+    appStatsTitle: "📊 Statistiche Applicazione",
+    licenseCreatedTitle: "🔑 Licenza/e generate con successo",
+    licenseInfoTitle: "🔍 Dettagli Licenza",
+    userCreatedTitle: "👤 Account Utente Creato",
+    userInfoTitle: "👤 Profilo Utente",
+    success: "Operazione riuscita",
+    error: "Operazione fallita",
+    noAppsConfigured: "⚠️ Nessuna applicazione configurata in `NIGHTAUTH_APPS` nel `.env`.",
+    btnLicenses: "🔑 Licenze",
+    btnUsers: "👥 Utenti",
+    btnStats: "📊 Statistiche",
+    btnSwitchApp: "📱 Cambia App",
+    btnCreateKey: "➕ Crea Chiave",
+    btnAddUser: "➕ Aggiungi Utente",
+    btnResetHwid: "🔄 Reimposta HWID",
+    btnLanguage: "🌐 Lingua",
+    btnBack: "◀️ Indietro",
+    chooseLanguage: "🌐 Scegli la tua lingua preferita:",
+    langSwitched: "✅ Lingua impostata su **{lang}**.",
+  },
+  pl: {
+    botTitle: "Konsola Zarządzania NightAuth",
+    unauthorized: "⛔ **Brak dostępu**: Nie masz uprawnień do wykonania tego polecenia.",
+    appSwitched: "✅ Aktywna aplikacja została zmieniona na **{app}**.",
+    appNotFound: "❌ Aplikacja **{app}** nie została znaleziona w konfiguracji.",
+    appStatsTitle: "📊 Przegląd aplikacji i statystyki",
+    licenseCreatedTitle: "🔑 Pomyślnie wygenerowano licencje",
+    licenseInfoTitle: "🔍 Szczegóły licencji",
+    userCreatedTitle: "👤 Konto użytkownika zostało utworzone",
+    userInfoTitle: "👤 Profil użytkownika",
+    success: "Sukces",
+    error: "Operacja nie powiodła się",
+    noAppsConfigured: "⚠️ Brak skonfigurowanych aplikacji w `NIGHTAUTH_APPS` w pliku `.env`.",
+    btnLicenses: "🔑 Licencje",
+    btnUsers: "👥 Użytkownicy",
+    btnStats: "📊 Statystyki",
+    btnSwitchApp: "📱 Zmień aplikację",
+    btnCreateKey: "➕ Utwórz klucz",
+    btnAddUser: "➕ Dodaj użytkownika",
+    btnResetHwid: "🔄 Zresetuj HWID",
+    btnLanguage: "🌐 Język",
+    btnBack: "◀️ Wstecz",
+    chooseLanguage: "🌐 Wybierz preferowany język:",
+    langSwitched: "✅ Zmieniono język na **{lang}**.",
+  },
+  pt: {
+    botTitle: "Console de Gerenciamento NightAuth",
+    unauthorized: "⛔ **Acesso Negado**: Você não tem permissão para executar este comando.",
+    appSwitched: "✅ Aplicativo ativo alterado para **{app}**.",
+    appNotFound: "❌ Aplicativo **{app}** não encontrado nos aplicativos configurados.",
+    appStatsTitle: "📊 Estatísticas do Aplicativo",
+    licenseCreatedTitle: "🔑 Licença(s) gerada(s) com sucesso",
+    licenseInfoTitle: "🔍 Detalhes da Licença",
+    userCreatedTitle: "👤 Conta de Usuário Criada",
+    userInfoTitle: "👤 Perfil de Usuário",
+    success: "Sucesso",
+    error: "Falha na operação" ,
+    noAppsConfigured: "⚠️ Nenhum aplicativo configurado em `NIGHTAUTH_APPS` no `.env`.",
+    btnLicenses: "🔑 Licenças",
+    btnUsers: "👥 Usuários",
+    btnStats: "📊 Estatísticas",
+    btnSwitchApp: "📱 Trocar App",
+    btnCreateKey: "➕ Criar Chave",
+    btnAddUser: "➕ Adicionar Usuário",
+    btnResetHwid: "🔄 Resetar HWID",
+    btnLanguage: "🌐 Idioma",
+    btnBack: "◀️ Voltar",
+    chooseLanguage: "🌐 Escolha seu idioma de preferência:",
+    langSwitched: "✅ Idioma alterado para **{lang}**.",
+  },
+  ru: {
+    botTitle: "Панель управления NightAuth",
+    unauthorized: "⛔ **Доступ запрещен**: У вас нет прав для выполнения этой команды.",
+    appSwitched: "✅ Активное приложение переключено на **{app}**.",
+    appNotFound: "❌ Приложение **{app}** не найдено в конфигурации.",
+    appStatsTitle: "📊 Обзор приложения и статистика",
+    licenseCreatedTitle: "🔑 Лицензии успешно сгенерированы",
+    licenseInfoTitle: "🔍 Сведения о лицензии",
+    userCreatedTitle: "👤 Учетная запись пользователя создана",
+    userInfoTitle: "👤 Профиль пользователя",
+    success: "Успешно",
+    error: "Ошибка операции",
+    noAppsConfigured: "⚠️ Приложения не настроены. Укажите `NIGHTAUTH_APPS` в `.env`.",
+    btnLicenses: "🔑 Лицензии",
+    btnUsers: "👥 Пользователи",
+    btnStats: "📊 Статистика",
+    btnSwitchApp: "📱 Сменить приложение",
+    btnCreateKey: "➕ Создать ключ",
+    btnAddUser: "➕ Добавить пользователя",
+    btnResetHwid: "🔄 Сбросить HWID",
+    btnLanguage: "🌐 Язык",
+    btnBack: "◀️ Назад",
+    chooseLanguage: "🌐 Выберите предпочитаемый язык:",
+    langSwitched: "✅ Язык изменен на **{lang}**.",
+  },
+  tr: {
+    botTitle: "NightAuth Yönetim Konsolu",
+    unauthorized: "⛔ **Erişim Engellendi**: Bu komutu çalıştırma izniniz yok.",
+    appSwitched: "✅ Aktif uygulama **{app}** olarak değiştirildi.",
+    appNotFound: "❌ **{app}** adlı uygulama yapılandırılmış uygulamalar arasında bulunamadı.",
+    appStatsTitle: "📊 Uygulama İstatistikleri",
+    licenseCreatedTitle: "🔑 Lisans(lar) başarıyla oluşturuldu",
+    licenseInfoTitle: "🔍 Lisans Ayrıntıları",
+    userCreatedTitle: "👤 Kullanıcı Hesabı Oluşturuldu",
+    userInfoTitle: "👤 Kullanıcı Profili",
+    success: "Başarılı",
+    error: "İşlem Başarısız",
+    noAppsConfigured: "⚠️ Uygulama yapılandırılmadı. Lütfen `.env` içinde `NIGHTAUTH_APPS` ayarlayın.",
+    btnLicenses: "🔑 Lisanslar",
+    btnUsers: "👥 Kullanıcılar",
+    btnStats: "📊 İstatistikler",
+    btnSwitchApp: "📱 Uygulamayı Değiştir",
+    btnCreateKey: "➕ Anahtar Oluştur",
+    btnAddUser: "➕ Kullanıcı Ekle",
+    btnResetHwid: "🔄 HWID Sıfırla",
+    btnLanguage: "🌐 Dil",
+    btnBack: "◀️ Geri",
+    chooseLanguage: "🌐 Lütfen tercih ettiğiniz dili seçin:",
+    langSwitched: "✅ Dil **{lang}** olarak güncellendi.",
+  },
+  zh: {
+    botTitle: "NightAuth 管理控制台",
+    unauthorized: "⛔ **访问被拒绝**：您没有权限执行此管理命令。",
+    appSwitched: "✅ 当前激活的应用已切换为 **{app}**。",
+    appNotFound: "❌ 在配置的应用中未找到应用 **{app}**。",
+    appStatsTitle: "📊 应用概览与统计信息",
+    licenseCreatedTitle: "🔑 许可证生成成功",
+    licenseInfoTitle: "🔍 许可证详情",
+    userCreatedTitle: "👤 用户账户创建成功",
+    userInfoTitle: "👤 用户资料详情",
+    success: "成功",
+    error: "操作失败",
+    noAppsConfigured: "⚠️ 未配置任何应用，请在 `.env` 中配置 `NIGHTAUTH_APPS`。",
+    btnLicenses: "🔑 许可证",
+    btnUsers: "👥 用户管理",
+    btnStats: "📊 统计信息",
+    btnSwitchApp: "📱 切换应用",
+    btnCreateKey: "➕ 生成密钥",
+    btnAddUser: "➕ 添加用户",
+    btnResetHwid: "🔄 重置 HWID",
+    btnLanguage: "🌐 语言设置",
+    btnBack: "◀️ 返回",
+    chooseLanguage: "🌐 请选择您的首选语言：",
+    langSwitched: "✅ 语言已切换为 **{lang}**。",
+  },
+};
+
+export function t(
+  key: keyof TranslationStrings,
+  lang: string = "en",
+  params: Record<string, string> = {},
+): string {
+  const dict = translations[lang] || translations["en"];
+  let str = dict[key] || translations["en"][key] || key;
+  for (const [k, v] of Object.entries(params)) {
+    str = str.replace(new RegExp(`\\{${k}\\}`, "g"), v);
+  }
+  return str;
+}
+
+export function getLanguageName(code: string): string {
+  const found = SUPPORTED_LANGUAGES.find((l) => l.code === code.toLowerCase());
+  return found ? `${found.flag} ${found.name}` : code;
+}
